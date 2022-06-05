@@ -1,0 +1,12 @@
+- Estrutura mvc 
+
+- A classe view tem dois métodos: contentView() fica responsável por trazer o conteúdo do arquivo que iremos renderizar
+- render recebe este arquivo e renderiza, conforme a view recebida
+
+-Fluxo do site
+
+Temos a classe Page, onde temos o método que monta o title dinâmico e o conteúdo da página e as outras páginas
+são classes que extendem Page e mandam as variáveis para o método getPage
+
+- Header e Footer são métodos que retornam as views header.html e footer.html e são retornados 
+e chamados dentro do getPage
